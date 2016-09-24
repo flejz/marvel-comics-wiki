@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Auxiliar colors -->
+    <color name="black">#000</color>
+    <color name="dark_gray">#333</color>
+    <color name="gray">#d5d5d5</color>
+    <color name="red">#f00</color>
+    <color name="white">#fff</color>
+
+</resources>

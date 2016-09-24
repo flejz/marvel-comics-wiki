@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/jdevbr/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/converter-gson/2.0.0-beta2/392c3d09e0f5e7087544093cc0cb23bb9c7af5fa/converter-gson-2.0.0-beta2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="392c3d09e0f5e7087544093cc0cb23bb9c7af5fa">
+        <dex dex="/home/jdevbr/git/marvel/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.0.0-beta2_aa31516cec5cc818d99a8b04d423cb4c6a3b9950/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jdevbr/git/marvel/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/home/jdevbr/git/marvel/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_ab1847d02f8fabe61b6c86e6a1ae09f7055bef18/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jdevbr/git/marvel/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/home/jdevbr/git/marvel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_06337d307c36f52aa7274f7798f276a85e14d0fd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jdevbr/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/logging-interceptor/2.6.0/77dc6e1eedd47953b41ef936f20b9b693fe73f6f/logging-interceptor-2.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="77dc6e1eedd47953b41ef936f20b9b693fe73f6f">
+        <dex dex="/home/jdevbr/git/marvel/app/build/intermediates/transforms/dex/debug/folders/1000/10/logging-interceptor-2.6.0_56e04c8e1a9da0020ff0c6b35634093e456258fe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jdevbr/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/home/jdevbr/git/marvel/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_60b5a92c6572ee07569631f106ee4d33bb533323/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jdevbr/.gradle/caches/modules-2/files-2.1/com.karumi/marvelapiclient/0.0.2/5221b9d496201ffd543dfd60ee6c75dab3fea0/marvelapiclient-0.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="005221b9d496201ffd543dfd60ee6c75dab3fea0">
+        <dex dex="/home/jdevbr/git/marvel/app/build/intermediates/transforms/dex/debug/folders/1000/10/marvelapiclient-0.0.2_324c826630f58cd81e79e6c2bef099791e9b3747/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jdevbr/git/marvel/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/home/jdevbr/git/marvel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_62d42f45b20f73e9e4db381d9dd93d0b78b0849a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jdevbr/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.6.0/212387a39088ecd3daff8e3bfc3bdc4123e33c67/okhttp-2.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="212387a39088ecd3daff8e3bfc3bdc4123e33c67">
+        <dex dex="/home/jdevbr/git/marvel/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-2.6.0_ceb15685916e392e2f9a172c1825b173fbcaeaf8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jdevbr/git/marvel/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/home/jdevbr/git/marvel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_b81cd8da32d35075ad1b53f9ac693b4f15fcc03e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jdevbr/git/marvel/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/home/jdevbr/git/marvel/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_ef96954c0d720425fb0c20c8db26ed7c30a256fc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jdevbr/git/marvel/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/home/jdevbr/git/marvel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_a23c1c152eff0444d3614c3c649d302e6406e9c4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jdevbr/git/marvel/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/home/jdevbr/git/marvel/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_2fc2409ab0e5143baf036836d14b601a5e7d6f79/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jdevbr/git/marvel/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="33d43ee92ba87a01bc2f36289d0b57df1de400c6">
+        <dex dex="/home/jdevbr/git/marvel/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_e3564e8965368b480a10e287d6ec93c4046f2d29/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jdevbr/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/home/jdevbr/git/marvel/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.6.0_27ae883fa1ee086dde959e012d1299b0768133ef/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jdevbr/git/marvel/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/home/jdevbr/git/marvel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_041e8d10b15231683cfdd68b492f04d49aad3401/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jdevbr/git/marvel/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/home/jdevbr/git/marvel/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_498b5a6297362355ad42514fd98c3f7d6d3554c5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jdevbr/git/marvel/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/home/jdevbr/git/marvel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_93238b597189e202389cb49fbeee943ce2f07691/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jdevbr/git/marvel/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/jdevbr/git/marvel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_3dea8c01870d70fcf837b6e8a7a249b633851cce/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jdevbr/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/2.0.0-beta2/880d9e0997b2d1bfc98e0d121ced33ee5d04aac4/retrofit-2.0.0-beta2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="880d9e0997b2d1bfc98e0d121ced33ee5d04aac4">
+        <dex dex="/home/jdevbr/git/marvel/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.0.0-beta2_9c4e2c566d6198d48c0b8445d632cb03f175dc7c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jdevbr/git/marvel/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="338c275b63469e4922ebde3b1956fb8f7f3ad1ef">
+        <dex dex="/home/jdevbr/git/marvel/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3522b47fd7fdb4249dc72c35e483e6f28790ee0d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jdevbr/git/marvel/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/home/jdevbr/git/marvel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_657185db8784d2e24086a1a88d6290d7a89f93b7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jdevbr/git/marvel/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/home/jdevbr/git/marvel/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_0b98560020930d65aee660266d04f5747f6f5311/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jdevbr/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/home/jdevbr/git/marvel/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.3.1_5a3970419863a95d29995a861fe549e1906cf4b1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jdevbr/git/marvel/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/home/jdevbr/git/marvel/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_2744c1beb893a4db6b175f796a5a236b9c2c48cc/classes.dex" />
+    </item>
+
+</items>
