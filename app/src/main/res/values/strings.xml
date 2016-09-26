@@ -1,11 +1,13 @@
 <resources>
+
+
     <string name="app_name">Marvel Comics Wiki</string>
 
+    <string name="marvel_powered">Powered by Marvel API</string>
 
     <string name="search_text">Digite o personagem...</string>
-    <string name="search_button_text">BUSCAR</string>
+    <string name="search_button_text">FIND</string>
+    <string name="search_feedback_init">Type a character name...</string>
+    <string name="search_feedback_not_found">No results...</string>
 
-    <string name="title_activity_search">SearchActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

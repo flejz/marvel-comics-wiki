@@ -1,40 +1,87 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/red">
+    android:background="@drawable/default_background_gradient">
 
 
     <RelativeLayout
+        android:id="@+id/header_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
 
-        <TextView
-            android:id="@+id/search_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/search_text"
-            android:textColor="@color/white"
-            android:textSize="50px"
-            android:textStyle="bold" />
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/horizontal_short_margin"
+        android:paddingRight="@dimen/horizontal_short_margin">
+
+        <ImageView
+            android:id="@+id/marvel_logo"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/horizontal_short_margin"
+            android:paddingBottom="@dimen/vertical_padding"
+            android:paddingTop="@dimen/vertical_padding"
+            android:scaleType="fitXY"
+            android:src="@drawable/marvel_logo_black" />
 
         <EditText
             android:id="@+id/search_edit_text"
             style="@style/MarvelTheme.EditText"
             android:layout_width="@dimen/default_edit_text_width"
             android:layout_height="wrap_content"
-            android:layout_below="@id/search_text" />
+            android:layout_toLeftOf="@+id/search_button"
+            android:layout_toRightOf="@id/marvel_logo" />
 
-        <Button
-            android:layout_toRightOf="@id/search_edit_text"
-            android:layout_below="@id/search_text"
-            android:layout_marginTop="@dimen/vertical_margin"
-            android:layout_marginLeft="@dimen/horizontal_margin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/search_button_text"/>
+        <ImageButton
+            android:id="@id/search_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/horizontal_short_margin"
+            android:src="@drawable/ic_web" />
 
     </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chars_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/credits_label"
+        android:layout_below="@id/header_container"></android.support.v7.widget.RecyclerView>
+
+
+    <ProgressBar
+        android:id="@+id/loading"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+
+
+    <TextView
+        android:id="@+id/feedback_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/default_edit_text_font_size"
+        android:textStyle="italic|bold"
+        android:text="@string/search_feedback_init" />
+
+    <TextView
+        android:id="@id/credits_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/horizontal_margin"
+        android:text="@string/marvel_powered"
+        android:textColor="@color/white" />
 
 </RelativeLayout>
