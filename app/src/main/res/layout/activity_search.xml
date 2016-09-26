@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/search_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_text"
+            android:textColor="@color/white"
+            android:textSize="50px"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/search_edit_text"
+            style="@style/MarvelTheme.EditText"
+            android:layout_width="@dimen/default_edit_text_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_text" />
+
+        <Button
+            android:layout_toRightOf="@id/search_edit_text"
+            android:layout_below="@id/search_text"
+            android:layout_marginTop="@dimen/vertical_margin"
+            android:layout_marginLeft="@dimen/horizontal_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_button_text"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">marvel</string>
+    <string name="app_name">Marvel Comics Wiki</string>
+
+
+    <string name="search_text">Digite o personagem...</string>
+    <string name="search_button_text">BUSCAR</string>
+
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
