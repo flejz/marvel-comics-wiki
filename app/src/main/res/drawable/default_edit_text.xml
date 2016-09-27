@@ -7,8 +7,8 @@
         android:color="@color/white" />
     <corners android:radius="@dimen/default_border_radius" />
     <padding
-        android:bottom="@dimen/vertical_padding"
+        android:bottom="@dimen/vertical_small_padding"
         android:left="@dimen/horizontal_padding"
         android:right="@dimen/horizontal_padding"
-        android:top="@dimen/vertical_padding" />
+        android:top="@dimen/vertical_small_padding" />
 </shape>

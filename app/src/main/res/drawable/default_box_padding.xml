@@ -4,11 +4,11 @@
     <solid android:color="@color/white" />
     <stroke
         android:width="@dimen/default_border_width"
-        android:color="@color/white" />
+        android:color="@color/black" />
     <corners android:radius="@dimen/default_border_radius" />
     <padding
         android:bottom="@dimen/vertical_padding"
-        android:left="@dimen/horizontal_padding"
-        android:right="@dimen/horizontal_padding"
+        android:left="@dimen/horizontal_small_padding"
+        android:right="@dimen/horizontal_small_padding"
         android:top="@dimen/vertical_padding" />
 </shape>

@@ -20,7 +20,7 @@
             android:id="@+id/marvel_logo"
             android:layout_width="70dp"
             android:layout_height="35dp"
-            android:layout_marginLeft="@dimen/horizontal_short_margin"
+            android:layout_marginLeft="@dimen/horizontal_small_margin"
             android:paddingBottom="@dimen/vertical_padding"
             android:paddingTop="@dimen/vertical_padding"
             android:scaleType="fitXY"
@@ -40,7 +40,7 @@
             android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="@dimen/horizontal_short_margin"
+            android:layout_marginRight="@dimen/horizontal_small_margin"
             android:src="@drawable/ic_web" />
 
     </RelativeLayout>

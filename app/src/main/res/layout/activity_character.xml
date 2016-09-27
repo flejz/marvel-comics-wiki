@@ -1,31 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/default_background_gradient">
 
-    <View
-        android:background="@color/dark_gray"
-        android:layout_width="match_parent"
-        android:layout_height="7dp" />
-
-    <TextView
-        android:id="@+id/character_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/dark_border_bottom_right"
-        android:paddingBottom="@dimen/vertical_padding"
-        android:paddingLeft="@dimen/horizontal_padding"
-        android:paddingRight="@dimen/horizontal_padding"
-        android:paddingTop="@dimen/vertical_padding"
-        android:text="NOME DO PERSONAGEM"
-        android:textColor="@color/white"
-        android:textStyle="bold|italic"
-        android:elevation="2dp"/>
-
-    <ImageView
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
-        android:src="@drawable/wolverine_landscape_amazing"/>
-</RelativeLayout>
+        android:background="@drawable/default_box_padding">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_height"
+            android:background="@drawable/default_box"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/wolverine_landscape_incredible" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:layout_marginTop="@dimen/vertical_margin"
+            android:background="@drawable/default_box_padding"
+            android:text="NAME"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/thumbnail"
+            android:padding="@dimen/horizontal_small_padding"
+            android:text="@string/sample_description"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

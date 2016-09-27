@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/vertical_small_margin"
+    android:background="@drawable/default_box_padding">
 
     <ImageView
         android:id="@+id/thumbnail"
         android:layout_width="match_parent"
         android:layout_height="@dimen/card_height"
-        android:layout_marginBottom="@dimen/vertical_short_margin"
         android:background="@drawable/default_box"
-        android:scaleType="centerCrop" />
+        android:padding="2dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/wolverine_landscape_incredible" />
 
     <ProgressBar
         android:id="@+id/loading"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/card_height"
-        android:layout_alignBottom="@+id/thumbnail"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true" />
 

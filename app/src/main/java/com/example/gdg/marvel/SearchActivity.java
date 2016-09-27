@@ -9,7 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
-import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -17,7 +17,6 @@ import com.example.gdg.marvel.adapter.CharactersAdapter;
 import com.karumi.marvelapiclient.CharacterApiClient;
 import com.karumi.marvelapiclient.MarvelApiConfig;
 import com.karumi.marvelapiclient.MarvelApiException;
-import com.karumi.marvelapiclient.model.CharacterDto;
 import com.karumi.marvelapiclient.model.CharactersDto;
 import com.karumi.marvelapiclient.model.CharactersQuery;
 import com.karumi.marvelapiclient.model.MarvelResponse;
@@ -27,7 +26,7 @@ public class SearchActivity extends AppCompatActivity {
     // Vars
     ProgressBar loading;
     TextView feedbackLabel;
-    ImageButton searchButton;
+    ImageView searchButton;
     EditText searchText;
     RecyclerView charsList;
 
@@ -58,15 +57,21 @@ public class SearchActivity extends AppCompatActivity {
         charsList.setLayoutManager(new LinearLayoutManager(this));
 
         searchText = (EditText) findViewById(R.id.search_edit_text);
-        searchButton = (ImageButton) findViewById(R.id.search_button);
+        searchButton = (ImageView) findViewById(R.id.search_button);
         searchButton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
 
+                if (searchText.getText().toString().trim().equals("")) {
+                    feedbackLabel.setText(R.string.search_feedback_empty);
+                    feedbackLabel.setVisibility(View.VISIBLE);
+                    return;
+                }
+
                 loading.setVisibility(View.VISIBLE);
                 feedbackLabel.setVisibility(View.INVISIBLE);
 
-                final CharacterApiClient char acterApiClient = new CharacterApiClient(marvelApiConfig);
+                final CharacterApiClient characterApiClient = new CharacterApiClient(marvelApiConfig);
                 final CharactersQuery spider = CharactersQuery.Builder.create().withNameStartWith(searchText.getText().toString()).build();
 
                 // Executa a pesquisa pelos personagens de forma assíncrona

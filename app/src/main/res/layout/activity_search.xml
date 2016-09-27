@@ -12,15 +12,15 @@
         android:layout_alignParentTop="true"
 
         android:layout_marginTop="@dimen/vertical_margin"
-        android:background="@color/white"
-        android:paddingLeft="@dimen/horizontal_short_margin"
-        android:paddingRight="@dimen/horizontal_short_margin">
+        android:background="@drawable/default_box"
+        android:paddingLeft="@dimen/horizontal_small_margin"
+        android:paddingRight="@dimen/horizontal_small_margin">
 
         <ImageView
             android:id="@+id/marvel_logo"
             android:layout_width="70dp"
             android:layout_height="35dp"
-            android:layout_marginLeft="@dimen/horizontal_short_margin"
+            android:layout_marginLeft="@dimen/horizontal_small_margin"
             android:paddingBottom="@dimen/vertical_padding"
             android:paddingTop="@dimen/vertical_padding"
             android:scaleType="fitXY"
@@ -30,18 +30,22 @@
             android:id="@+id/search_edit_text"
             style="@style/MarvelTheme.EditText"
             android:layout_width="@dimen/default_edit_text_width"
+            android:inputType="textCapCharacters"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="WOLV"
             android:layout_toLeftOf="@+id/search_button"
             android:layout_toRightOf="@id/marvel_logo" />
 
-        <ImageButton
+        <ImageView
+            android:background="@color/white"
             android:id="@id/search_button"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="@dimen/horizontal_short_margin"
-            android:src="@drawable/ic_web" />
+            android:layout_marginRight="@dimen/horizontal_small_margin"
+            android:src="@drawable/ic_search" />
 
     </RelativeLayout>
 
@@ -51,7 +55,6 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/credits_label"
         android:layout_below="@id/header_container"></android.support.v7.widget.RecyclerView>
-
 
     <ProgressBar
         android:id="@+id/loading"
@@ -69,10 +72,10 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+        android:text="@string/search_feedback_init"
         android:textColor="@color/white"
         android:textSize="@dimen/default_edit_text_font_size"
-        android:textStyle="italic|bold"
-        android:text="@string/search_feedback_init" />
+        android:textStyle="italic|bold" />
 
     <TextView
         android:id="@id/credits_label"
@@ -80,7 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_margin="@dimen/horizontal_margin"
+        android:layout_margin="@dimen/horizontal_small_margin"
         android:text="@string/marvel_powered"
         android:textColor="@color/white" />
 
