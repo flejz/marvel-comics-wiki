@@ -111,13 +111,21 @@ public class SearchActivity extends AppCompatActivity {
 
                         } catch (MarvelApiException e) {
                             e.printStackTrace();
+
+                            // Executa a thread da interface
+                            runOnUiThread(new Runnable() {
+                                public void run() {
+                                    loading.setVisibility(View.INVISIBLE);
+                                    charsList.setAdapter(null);
+                                    feedbackLabel.setText(R.string.search_feedback_internet_problems);
+                                    feedbackLabel.setVisibility(View.VISIBLE);
+                                }
+                            });
                         }
                         return null;
                     }
                 }.execute();
-
             }
         });
-
     }
 }

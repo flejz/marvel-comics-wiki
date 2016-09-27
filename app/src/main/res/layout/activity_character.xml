@@ -5,42 +5,58 @@
     android:layout_height="match_parent"
     android:background="@drawable/default_background_gradient">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/default_box_padding">
-
-        <ImageView
-            android:id="@+id/thumbnail"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/card_height"
-            android:background="@drawable/default_box"
-            android:padding="2dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/wolverine_landscape_incredible" />
+        android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/name"
+            android:id="@+id/char_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
-            android:layout_marginRight="@dimen/horizontal_margin"
-            android:layout_marginTop="@dimen/vertical_margin"
             android:background="@drawable/default_box_padding"
-            android:text="NAME"
+            android:text="@string/char_title"
             android:textStyle="bold|italic" />
 
-        <TextView
-            android:id="@+id/description"
+
+        <RelativeLayout
+            android:id="@+id/character_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/thumbnail"
-            android:padding="@dimen/horizontal_small_padding"
-            android:text="@string/sample_description"
-            android:textStyle="italic" />
+            android:layout_below="@id/char_title"
+            android:background="@drawable/default_box_padding">
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_height"
+                android:background="@drawable/default_box"
+                android:padding="2dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/wolverine_landscape_incredible" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/horizontal_margin"
+                android:layout_marginTop="@dimen/vertical_margin"
+                android:background="@drawable/default_box_padding"
+                android:text="NAME"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thumbnail"
+                android:padding="@dimen/horizontal_small_padding"
+                android:text="@string/sample_description"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
 
     </RelativeLayout>
-
-
 </ScrollView>

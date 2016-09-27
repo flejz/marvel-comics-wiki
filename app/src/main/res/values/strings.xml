@@ -10,7 +10,10 @@
     <string name="search_feedback_init">Type a character name...</string>
     <string name="search_feedback_not_found">No results...</string>
     <string name="search_feedback_empty">You forgot to type a name...</string>
+    <string name="search_feedback_internet_problems">Something bad happened...</string>
 
-    <string name="sample_description">Born with super-human senses and the power to heal from almost any wound, Wolverine was captured by a secret Canadian organization and given an unbreakable skeleton and claws. Treated like an animal, it took years for him to control himself. Now, he's a premiere member of both the X-Men and the Avengers.</string>
+    <string name="char_title">CHARACTER</string>
+
+    <string name="sample_description">Born with super-human senses and the power to heal from almost any wound, Wolverine was captured by a secret Canadian organization and given an unbreakable skeleton and claws. Treated like an animal, it took years for him to control himself. Now, he\'s a premiere member of both the X-Men and the Avengers.</string>
 
 </resources>

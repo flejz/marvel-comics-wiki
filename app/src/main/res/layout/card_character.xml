@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="@dimen/vertical_small_margin"
+    android:layout_marginTop="@dimen/vertical_small_margin"
     android:background="@drawable/default_box_padding">
 
     <ImageView
@@ -11,8 +11,7 @@
         android:layout_height="@dimen/card_height"
         android:background="@drawable/default_box"
         android:padding="2dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/wolverine_landscape_incredible" />
+        android:src="@drawable/ic_photoshot_wolverine" />
 
     <ProgressBar
         android:id="@+id/loading"

@@ -19,6 +19,7 @@ import com.karumi.marvelapiclient.model.CharacterDto;
 import com.karumi.marvelapiclient.model.MarvelImage;
 
 import java.util.List;
+import java.util.Random;
 
 public class CharactersAdapter extends RecyclerView.Adapter<CharactersAdapter.CharacterViewHolder> {
 
@@ -78,6 +79,7 @@ public class CharactersAdapter extends RecyclerView.Adapter<CharactersAdapter.Ch
 
             // Insere o nome do personagem no objeto name
             nameLabel.setText(character.getName().toUpperCase());
+            thumbnail.setImageBitmap(ImageUtils.getRandomThumbnail(context));
 
             // Executa de forma assíncrona a verificação da imagem
             new AsyncTask<Void, Void, Void>() {
@@ -97,6 +99,7 @@ public class CharactersAdapter extends RecyclerView.Adapter<CharactersAdapter.Ch
 
                             // Esconde o loading e insere a imagem
                             loading.setVisibility(View.GONE);
+                            thumbnail.setScaleType(ImageView.ScaleType.FIT_XY);
                             thumbnail.setImageBitmap(thumbnailImage);
 
                         }
