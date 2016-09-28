@@ -7,6 +7,10 @@ import android.os.Environment;
 import android.util.Log;
 
 import com.example.gdg.marvel.R;
+import com.karumi.marvelapiclient.model.CharacterDto;
+import com.karumi.marvelapiclient.model.ComicDto;
+import com.karumi.marvelapiclient.model.EventResourceDto;
+import com.karumi.marvelapiclient.model.MarvelImage;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -22,10 +26,11 @@ public class ImageUtils {
 
     /**
      * Gets random thumbnails
+     *
      * @param context
      * @return
      */
-    public static Bitmap getRandomThumbnail(Context context){
+    public static Bitmap getRandomThumbnail(Context context) {
         int min = 1, max = 9;
         int index = new Random().nextInt(max - min + 1) + min;
         int resId;
@@ -69,13 +74,72 @@ public class ImageUtils {
      *
      * @return
      */
-    private static String getImagesPath() {
+    private static String getImagesPath(String relativePath) {
         String dir = Environment.getExternalStorageDirectory() + "/MarvelComicsWiki/";
+
+        if (relativePath != null && !relativePath.equals(""))
+            dir += relativePath + "/";
 
         new File(dir).mkdir();
 
         return dir;
     }
+
+    /**
+     * Gets from char
+     *
+     * @param character
+     * @return
+     */
+    public static Bitmap getFromCharacter(CharacterDto character) {
+
+        // Monta o nome do arquivo
+        String thumbnailFileName = character.getId() + "." + character.getThumbnail().getExtension();
+
+        // Captura a imagem
+        return getFromUrl(
+                thumbnailFileName,
+                character.getThumbnail().getImageUrl(MarvelImage.Size.LANDSCAPE_AMAZING),
+                "characters");
+    }
+
+    /**
+     * Gets from char
+     *
+     * @param comic
+     * @return
+     */
+    public static Bitmap getFromComic(ComicDto comic) {
+
+        // Monta o nome do arquivo
+        String thumbnailFileName = comic.getId() + "." + comic.getThumbnail().getExtension();
+
+        // Captura a imagem
+        return getFromUrl(
+                thumbnailFileName,
+                comic.getThumbnail().getImageUrl(MarvelImage.Size.PORTRAIT_INCREDIBLE),
+                "comics");
+    }
+
+    /**
+     * Gets from char
+     *
+     * @param event
+     * @return
+     */
+    public static Bitmap getFromEvent(EventResourceDto event) {
+
+//        // Monta o nome do arquivo
+//        String thumbnailFileName = event.getResourceUri() + "." + character.getThumbnail().getExtension();
+//
+//        // Captura a imagem
+//        return getFromUrl(
+//                thumbnailFileName,
+//                character.getThumbnail().getImageUrl(MarvelImage.Size.LANDSCAPE_AMAZING),
+//                "characters");
+        return null;
+    }
+
 
     /**
      * Gets the imagem from the url
@@ -85,12 +149,16 @@ public class ImageUtils {
      * @return
      */
     public static Bitmap getFromUrl(String fileName, String imageUrl) {
-        File file = new File(getImagesPath() + fileName);
+        return getFromUrl(fileName, imageUrl, null);
+    }
+
+    public static Bitmap getFromUrl(String fileName, String imageUrl, String relativePath) {
+        File file = new File(getImagesPath(relativePath) + fileName);
 
         if (file.exists()) {
             return BitmapFactory.decodeFile(file.getAbsolutePath());
         } else {
-            saveFromUrl(fileName, imageUrl);
+            saveFromUrl(fileName, imageUrl, relativePath);
             return getFromUrl(fileName, imageUrl);
         }
     }
@@ -102,7 +170,7 @@ public class ImageUtils {
      * @param imageUrl the image url
      * @return if the image was successfull saved
      */
-    public static boolean saveFromUrl(String fileName, String imageUrl) {
+    public static boolean saveFromUrl(String fileName, String imageUrl, String relativePath) {
 
         try {
 
@@ -111,7 +179,7 @@ public class ImageUtils {
             connection.connect();
 
             InputStream input = new BufferedInputStream(url.openStream());
-            OutputStream output = new FileOutputStream(getImagesPath() + fileName);
+            OutputStream output = new FileOutputStream(getImagesPath(relativePath) + fileName);
 
             byte data[] = new byte[1024];
 

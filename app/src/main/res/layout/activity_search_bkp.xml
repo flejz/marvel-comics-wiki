@@ -46,7 +46,7 @@
     </RelativeLayout>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/chars_list"
+        android:id="@+id/characters_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/credits_label"

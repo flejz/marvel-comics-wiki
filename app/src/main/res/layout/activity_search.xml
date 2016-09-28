@@ -1,9 +1,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/default_background_gradient"
     android:paddingLeft="@dimen/horizontal_small_padding"
-    android:paddingRight="@dimen/horizontal_small_padding"
-    android:background="@drawable/default_background_gradient">
+    android:paddingRight="@dimen/horizontal_small_padding">
 
 
     <RelativeLayout
@@ -32,31 +32,32 @@
             android:id="@+id/search_edit_text"
             style="@style/MarvelTheme.EditText"
             android:layout_width="@dimen/default_edit_text_width"
-            android:inputType="textCapCharacters"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:text="WOLV"
             android:layout_toLeftOf="@+id/search_button"
-            android:layout_toRightOf="@id/marvel_logo" />
+            android:layout_toRightOf="@id/marvel_logo"
+            android:inputType="textCapCharacters"
+            android:text="WOLV" />
 
         <ImageView
-            android:background="@color/white"
             android:id="@id/search_button"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="@dimen/horizontal_small_margin"
+            android:background="@color/white"
             android:src="@drawable/ic_search" />
 
     </RelativeLayout>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/chars_list"
+        android:id="@+id/characters_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/credits_label"
-        android:layout_below="@id/header_container"></android.support.v7.widget.RecyclerView>
+        android:layout_below="@id/header_container">
+    </android.support.v7.widget.RecyclerView>
 
     <ProgressBar
         android:id="@+id/loading"
@@ -75,6 +76,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="@string/search_feedback_init"
+        android:background="@null"
         android:textColor="@color/white"
         android:textSize="@dimen/default_edit_text_font_size"
         android:textStyle="italic|bold" />
@@ -86,7 +88,6 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_margin="@dimen/horizontal_small_margin"
-        android:text="@string/marvel_powered"
-        android:textColor="@color/white" />
+        android:text="@string/marvel_powered"/>
 
 </RelativeLayout>
