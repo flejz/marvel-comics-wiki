@@ -28,88 +28,88 @@ reponse
 
         },
         "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009718",
-        "comics": {
+        "stories": {
           "available": 1870,
-          "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009718/comics",
+          "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009718/stories",
           "items": [
             {
-              "resourceURI": "http://gateway.marvel.com/v1/public/comics/41112",
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/41112",
               "name": "5 Ronin (Hardcover)"
             },
             {
-              "resourceURI": "http://gateway.marvel.com/v1/public/comics/41113",
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/41113",
               "name": "5 Ronin (Hardcover)"
             },
             {
-              "resourceURI": "http://gateway.marvel.com/v1/public/comics/38756",
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/38756",
               "name": "5 Ronin (2010) #1"
             },
             {
-              "resourceURI": "http://gateway.marvel.com/v1/public/comics/36162",
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/36162",
               "name": "5 Ronin (2010) #1 (AJA Cover)"
             },
             {
-              "resourceURI": "http://gateway.marvel.com/v1/public/comics/29317",
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/29317",
               "name": "ACTS OF VENGEANCE CROSSOVERS OMNIBUS (Hardcover)"
             },
             {
-              "resourceURI": "http://gateway.marvel.com/v1/public/comics/29318",
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/29318",
               "name": "ACTS OF VENGEANCE CROSSOVERS OMNIBUS (DM Only) (Hardcover)"
             },
             {
-              "resourceURI": "http://gateway.marvel.com/v1/public/comics/24017",
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/24017",
               "name": "Agents of Atlas (2009) #3 (Wolverine Art Appreciation Variant)"
             },
             {
-              "resourceURI": "http://gateway.marvel.com/v1/public/comics/24221",
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/24221",
               "name": "Agents of Atlas (2009) #5"
             },
             {
-              "resourceURI": "http://gateway.marvel.com/v1/public/comics/24222",
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/24222",
               "name": "Agents of Atlas (2009) #5 (MCGUINNESS VARIANT)"
             },
             {
-              "resourceURI": "http://gateway.marvel.com/v1/public/comics/12690",
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/12690",
               "name": "Alpha Flight (1983) #3"
             },
             {
-              "resourceURI": "http://gateway.marvel.com/v1/public/comics/38564",
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/38564",
               "name": "Alpha Flight (2011) #7"
             },
             {
-              "resourceURI": "http://gateway.marvel.com/v1/public/comics/12671",
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/12671",
               "name": "Alpha Flight (1983) #13"
             },
             {
-              "resourceURI": "http://gateway.marvel.com/v1/public/comics/12675",
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/12675",
               "name": "Alpha Flight (1983) #16"
             },
             {
-              "resourceURI": "http://gateway.marvel.com/v1/public/comics/12676",
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/12676",
               "name": "Alpha Flight (1983) #17"
             },
             {
-              "resourceURI": "http://gateway.marvel.com/v1/public/comics/12694",
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/12694",
               "name": "Alpha Flight (1983) #33"
             },
             {
-              "resourceURI": "http://gateway.marvel.com/v1/public/comics/12695",
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/12695",
               "name": "Alpha Flight (1983) #34"
             },
             {
-              "resourceURI": "http://gateway.marvel.com/v1/public/comics/12715",
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/12715",
               "name": "Alpha Flight (1983) #52"
             },
             {
-              "resourceURI": "http://gateway.marvel.com/v1/public/comics/12716",
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/12716",
               "name": "Alpha Flight (1983) #53"
             },
             {
-              "resourceURI": "http://gateway.marvel.com/v1/public/comics/12725",
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/12725",
               "name": "Alpha Flight (1983) #61"
             },
             {
-              "resourceURI": "http://gateway.marvel.com/v1/public/comics/12753",
+              "resourceURI": "http://gateway.marvel.com/v1/public/stories/12753",
               "name": "Alpha Flight (1983) #87"
             }
           ],
@@ -407,7 +407,7 @@ reponse
           },
           {
             "type": "comiclink",
-            "url": "http://marvel.com/comics/characters/1009718/wolverine?utm_campaign=apiRef&utm_source=daa0d68ce8483fe62a24fd7c86086058"
+            "url": "http://marvel.com/stories/characters/1009718/wolverine?utm_campaign=apiRef&utm_source=daa0d68ce8483fe62a24fd7c86086058"
           }
         ]
       }

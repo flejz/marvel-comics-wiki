@@ -3,6 +3,7 @@ package com.example.gdg.marvel.view.adapter;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.support.v7.widget.RecyclerView;
@@ -96,7 +97,7 @@ public class CharactersAdapter extends RecyclerView.Adapter<CharactersAdapter.Ch
 
             // Insere o nome do personagem no objeto name
             nameLabel.setText(character.getName().toUpperCase());
-            thumbnail.setImageBitmap(ImageUtils.getRandomThumbnail(context));
+            thumbnail.setImageBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.marvel_logo_default_character));
 
             this.character = character;
 

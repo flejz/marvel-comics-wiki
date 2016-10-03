@@ -3,6 +3,7 @@ package com.example.gdg.marvel.utils;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
 import android.os.Environment;
 import android.util.Log;
 
@@ -77,6 +78,8 @@ public class ImageUtils {
     private static String getImagesPath(String relativePath) {
         String dir = Environment.getExternalStorageDirectory() + "/MarvelComicsWiki/";
 
+        new File(dir).mkdir();
+
         if (relativePath != null && !relativePath.equals(""))
             dir += relativePath + "/";
 
@@ -117,27 +120,8 @@ public class ImageUtils {
         // Captura a imagem
         return getFromUrl(
                 thumbnailFileName,
-                comic.getThumbnail().getImageUrl(MarvelImage.Size.PORTRAIT_INCREDIBLE),
+                comic.getThumbnail().getImageUrl(MarvelImage.Size.PORTRAIT_UNCANNY),
                 "comics");
-    }
-
-    /**
-     * Gets from char
-     *
-     * @param event
-     * @return
-     */
-    public static Bitmap getFromEvent(EventResourceDto event) {
-
-//        // Monta o nome do arquivo
-//        String thumbnailFileName = event.getResourceUri() + "." + character.getThumbnail().getExtension();
-//
-//        // Captura a imagem
-//        return getFromUrl(
-//                thumbnailFileName,
-//                character.getThumbnail().getImageUrl(MarvelImage.Size.LANDSCAPE_AMAZING),
-//                "characters");
-        return null;
     }
 
 
@@ -148,9 +132,6 @@ public class ImageUtils {
      * @param imageUrl
      * @return
      */
-    public static Bitmap getFromUrl(String fileName, String imageUrl) {
-        return getFromUrl(fileName, imageUrl, null);
-    }
 
     public static Bitmap getFromUrl(String fileName, String imageUrl, String relativePath) {
         File file = new File(getImagesPath(relativePath) + fileName);
@@ -159,7 +140,7 @@ public class ImageUtils {
             return BitmapFactory.decodeFile(file.getAbsolutePath());
         } else {
             saveFromUrl(fileName, imageUrl, relativePath);
-            return getFromUrl(fileName, imageUrl);
+            return getFromUrl(fileName, imageUrl, relativePath);
         }
     }
 
@@ -199,5 +180,30 @@ public class ImageUtils {
             e.printStackTrace();
             return false;
         }
+    }
+
+    /**
+     * Gets a resized bitmap
+     * @param context
+     * @param id
+     * @param newHeight
+     * @param newWidth
+     * @return
+     */
+    public static Bitmap getResizedBitmap(Context context, int id, int newHeight, int newWidth) {
+
+        Bitmap bm = BitmapFactory.decodeResource(context.getResources(), id);
+
+        int width = bm.getWidth();
+        int height = bm.getHeight();
+
+        float scaleWidth = ((float) newWidth) / width;
+        float scaleHeight = ((float) newHeight) / height;
+
+        Matrix matrix = new Matrix();
+        matrix.postScale(scaleWidth, scaleHeight);
+
+        return Bitmap.createBitmap(bm, 0, 0, width, height, matrix, false);
+
     }
 }

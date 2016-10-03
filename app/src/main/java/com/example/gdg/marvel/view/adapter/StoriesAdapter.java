@@ -19,15 +19,15 @@ import com.example.gdg.marvel.utils.ImageUtils;
 import com.karumi.marvelapiclient.ComicApiClient;
 import com.karumi.marvelapiclient.MarvelApiException;
 import com.karumi.marvelapiclient.model.ComicDto;
-import com.karumi.marvelapiclient.model.ComicResourceDto;
+import com.karumi.marvelapiclient.model.StoryResourceDto;
 
 import java.util.List;
 
-public class StoriesAdapter extends RecyclerView.Adapter<StoriesAdapter.ComicsViewHolder> {
+public class StoriesAdapter extends RecyclerView.Adapter<StoriesAdapter.StoriesViewHolder> {
 
     // Vars
     Context context;
-    List<ComicResourceDto> comics;
+    List<StoryResourceDto> stories;
 
     // Seta a fonte padrão
     Typeface defaultFont;
@@ -35,32 +35,32 @@ public class StoriesAdapter extends RecyclerView.Adapter<StoriesAdapter.ComicsVi
     /**
      * Cosntructor
      *
-     * @param comics
+     * @param stories
      */
-    public StoriesAdapter(Context context, List<ComicResourceDto> comics) {
+    public StoriesAdapter(Context context, List<StoryResourceDto> stories) {
 
         // Inicializando a classe
         this.context = context;
-        this.comics = comics;
+        this.stories = stories;
 
         this.defaultFont = Typeface.createFromAsset(context.getAssets(), Globals.defaultFontName);
     }
 
-    public ComicsViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public StoriesViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        return new ComicsViewHolder(LayoutInflater.from(context).inflate(R.layout.card_comic, null));
+        return new StoriesViewHolder(LayoutInflater.from(context).inflate(R.layout.card_comic, null));
     }
 
-    public void onBindViewHolder(ComicsViewHolder holder, int position) {
-        holder.bind(comics.get(position));
+    public void onBindViewHolder(StoriesViewHolder holder, int position) {
+        holder.bind(stories.get(position));
     }
 
     public int getItemCount() {
-        return comics.size();
+        return stories.size();
     }
 
     // Classe auxiliar
-    public class ComicsViewHolder extends RecyclerView.ViewHolder {
+    public class StoriesViewHolder extends RecyclerView.ViewHolder {
 
         // Inicializa as variáveis referentes aos components na tela
         ProgressBar loading;
@@ -73,7 +73,7 @@ public class StoriesAdapter extends RecyclerView.Adapter<StoriesAdapter.ComicsVi
          *
          * @param card
          */
-        public ComicsViewHolder(View card) {
+        public StoriesViewHolder(View card) {
             super(card);
 
             // Inicializa as variáveis referentes aos components na tela
@@ -84,7 +84,7 @@ public class StoriesAdapter extends RecyclerView.Adapter<StoriesAdapter.ComicsVi
         }
 
         // Bids the char
-        public void bind(final ComicResourceDto comic) {
+        public void bind(final StoryResourceDto comic) {
 
             // Insere o nome do personagem no objeto name
             nameLabel.setText(comic.getName().toUpperCase());
@@ -97,11 +97,11 @@ public class StoriesAdapter extends RecyclerView.Adapter<StoriesAdapter.ComicsVi
             thumbnail.setImageBitmap(ImageUtils.getRandomThumbnail(context));
 
             // Executa de forma assíncrona a verificação da imagem
-            new AsyncTask<Void, Void, Void>() {
-                protected Void doInBackground(Void... voids) {
+            new AsyncTask() {
+                @Override
+                protected Object doInBackground(Object[] params) {
 
                     // Captura a imagem
-
                     ComicApiClient comicApiClient = new ComicApiClient(Globals.marvelApiConfig);
 
                     try {

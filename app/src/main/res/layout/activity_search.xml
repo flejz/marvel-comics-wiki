@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/default_background_gradient"
+    android:background="@drawable/background_comic_page"
     android:paddingLeft="@dimen/horizontal_small_padding"
     android:paddingRight="@dimen/horizontal_small_padding">
 
@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-
         android:layout_marginTop="@dimen/vertical_margin"
         android:background="@drawable/default_box"
         android:paddingLeft="@dimen/horizontal_small_margin"
@@ -36,8 +35,7 @@
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@+id/search_button"
             android:layout_toRightOf="@id/marvel_logo"
-            android:inputType="textCapCharacters"
-            android:text="WOLV" />
+            android:inputType="textCapCharacters" />
 
         <ImageView
             android:id="@id/search_button"
@@ -56,8 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/credits_label"
-        android:layout_below="@id/header_container">
-    </android.support.v7.widget.RecyclerView>
+        android:layout_below="@id/header_container"></android.support.v7.widget.RecyclerView>
 
     <ProgressBar
         android:id="@+id/loading"
@@ -75,10 +72,10 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="@string/search_feedback_init"
         android:background="@null"
+        android:text="@string/search_feedback_init"
         android:textColor="@color/white"
-        android:textSize="@dimen/default_edit_text_font_size"
+        android:textSize="@dimen/default_edit_text_text_size"
         android:textStyle="italic|bold" />
 
     <TextView
@@ -88,6 +85,6 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_margin="@dimen/horizontal_small_margin"
-        android:text="@string/marvel_powered"/>
+        android:text="@string/marvel_powered" />
 
 </RelativeLayout>

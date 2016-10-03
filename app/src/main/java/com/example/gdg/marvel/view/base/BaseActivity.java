@@ -22,6 +22,9 @@ public class BaseActivity extends AppCompatActivity {
         super.onStart();
 
         setUp();
+        setComponents();
+        setEvents();
+        fillUp();
     }
 
     /**
@@ -39,5 +42,23 @@ public class BaseActivity extends AppCompatActivity {
         if (creditsLabel != null) {
             creditsLabel.setTypeface(defaultFont);
         }
+    }
+
+    /**
+     * Sets the components
+     */
+    protected void setComponents() {
+    }
+
+    /**
+     * Sets the components' events
+     */
+    protected void setEvents() {
+    }
+
+    /**
+     * Fill up the activity
+     */
+    protected void fillUp() {
     }
 }

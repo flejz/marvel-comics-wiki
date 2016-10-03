@@ -62,10 +62,7 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventsView
     public class EventsViewHolder extends RecyclerView.ViewHolder {
 
         // Inicializa as variáveis referentes aos components na tela
-        ProgressBar loading;
         TextView nameLabel;
-        ImageView thumbnail;
-        EventResourceDto event;
 
         /**
          * Constructor
@@ -78,8 +75,6 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventsView
             // Inicializa as variáveis referentes aos components na tela
             nameLabel = (TextView) card.findViewById(R.id.name);
             nameLabel.setTypeface(defaultFont);
-            loading = (ProgressBar) card.findViewById(R.id.loading);
-            thumbnail = (ImageView) card.findViewById(R.id.thumbnail);
         }
 
         // Bids the char
@@ -87,31 +82,6 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventsView
 
             // Insere o nome do personagem no objeto name
             nameLabel.setText(event.getName().toUpperCase());
-            thumbnail.setImageBitmap(ImageUtils.getRandomThumbnail(context));
-
-            this.event = event;
-
-            // Executa de forma assíncrona a verificação da imagem
-            new AsyncTask<Void, Void, Void>() {
-                protected Void doInBackground(Void... voids) {
-
-                    // Captura a imagem
-                    final Bitmap thumbnailImage = null; //ImageUtils.getFromCharacter(character);
-
-                    // Executa a thread da interface
-                    ((Activity) context).runOnUiThread(new Runnable() {
-                        public void run() {
-
-                            // Esconde o loading e insere a imagem
-                            loading.setVisibility(View.GONE);
-                            thumbnail.setScaleType(ImageView.ScaleType.FIT_XY);
-                            thumbnail.setImageBitmap(thumbnailImage);
-
-                        }
-                    });
-                    return null;
-                }
-            }.execute();
         }
     }
 }

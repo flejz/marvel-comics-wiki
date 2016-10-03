@@ -6,6 +6,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.gdg.marvel.R;
@@ -25,14 +26,17 @@ public class CharacterActivity extends BaseActivity {
     CharacterDto character;
 
     // Comṕonents
+    TextView characterBack;
     TextView characterTitle;
     TextView characterName;
     TextView characterDescription;
     ImageView characterThumbnail;
 
+    RelativeLayout comicsContainer;
     TextView comicsTitle;
     RecyclerView comicsList;
 
+    RelativeLayout eventsContainer;
     TextView eventsTitle;
     RecyclerView eventsList;
 
@@ -50,23 +54,12 @@ public class CharacterActivity extends BaseActivity {
     }
 
     /**
-     * When starts the activity
-     */
-    @Override
-    protected void onStart() {
-        super.onStart();
-
-        setComponents();
-        fillUp();
-    }
-
-    /**
      * Sets the components
      */
-    private void setComponents() {
+    protected void setComponents() {
 
-
-
+        characterBack = (TextView) findViewById(R.id.character_back);
+        characterBack.setTypeface(defaultFont);
         characterTitle = (TextView) findViewById(R.id.character_title);
         characterTitle.setTypeface(defaultFont);
         characterName = (TextView) findViewById(R.id.character_name);
@@ -78,14 +71,16 @@ public class CharacterActivity extends BaseActivity {
         LinearLayoutManager comicsLayoutManager = new LinearLayoutManager(this);
         comicsLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
 
+        comicsContainer = (RelativeLayout) findViewById(R.id.comics_container);
         comicsTitle = (TextView) findViewById(R.id.comics_title);
         comicsTitle.setTypeface(defaultFont);
         comicsList = (RecyclerView) findViewById(R.id.comics_list);
         comicsList.setLayoutManager(comicsLayoutManager);
 
         LinearLayoutManager eventsLayoutManager = new LinearLayoutManager(this);
-        eventsLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+        eventsLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
+        eventsContainer = (RelativeLayout) findViewById(R.id.events_container);
         eventsTitle = (TextView) findViewById(R.id.events_title);
         eventsTitle.setTypeface(defaultFont);
         eventsList = (RecyclerView) findViewById(R.id.events_list);
@@ -93,9 +88,20 @@ public class CharacterActivity extends BaseActivity {
     }
 
     /**
+     * Sets the components' events
+     */
+    protected void setEvents() {
+        characterBack.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+    }
+
+    /**
      * Fill up the activity
      */
-    private void fillUp() {
+    protected void fillUp() {
 
         // Captura a imagem
         final Bitmap thumbnailImage = ImageUtils.getFromCharacter(character);
@@ -110,9 +116,15 @@ public class CharacterActivity extends BaseActivity {
             characterDescription.setText(character.getDescription());
 
         // Events
-        comicsList.setAdapter(new ComicsAdapter(this, character.getComics().getItems()));
+        if (character.getComics().getItems().size() > 0)
+            comicsList.setAdapter(new ComicsAdapter(this, character));
+        else
+            comicsContainer.setVisibility(View.GONE);
 
         // Events
-        eventsList.setAdapter(new EventsAdapter(this, character.getEvents().getItems()));
+        if (character.getEvents().getItems().size() > 0)
+            eventsList.setAdapter(new EventsAdapter(this, character.getEvents().getItems()));
+        else
+            eventsContainer.setVisibility(View.GONE);
     }
 }

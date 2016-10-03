@@ -3,13 +3,14 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/default_background_gradient"
+    android:background="@drawable/background_comic_page"
     android:paddingLeft="@dimen/horizontal_small_padding"
     android:paddingRight="@dimen/horizontal_small_padding">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_margin">
 
         <TextView
             android:id="@+id/character_title"
@@ -18,6 +19,13 @@
             android:layout_alignParentTop="true"
             android:text="@string/char_title"
             android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/character_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/char_back" />
 
         <RelativeLayout
             android:id="@+id/character_container"
@@ -33,7 +41,7 @@
                 android:background="@drawable/default_box"
                 android:padding="2dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/wolverine_landscape_incredible" />
+                android:src="@drawable/ic_photoshot_spider_man" />
 
             <TextView
                 android:id="@+id/character_name"
@@ -56,10 +64,10 @@
                 android:padding="@dimen/horizontal_small_padding"
                 android:text="@string/sample_description"
                 android:textAlignment="center"
+                android:textSize="@dimen/default_small_text_size"
                 android:textStyle="italic" />
 
         </RelativeLayout>
-
 
         <RelativeLayout
             android:id="@+id/comics_container"

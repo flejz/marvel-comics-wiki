@@ -37,7 +37,7 @@ public class SearchActivity extends BaseActivity {
     RecyclerView charactersList;
 
     // Listeners
-    CharactersEvents characterEvents = new CharactersEvents(){
+    CharactersEvents characterEvents = new CharactersEvents() {
 
         public void onSelect(CharacterDto character) {
 
@@ -62,19 +62,9 @@ public class SearchActivity extends BaseActivity {
     }
 
     /**
-     * When starts the activity
+     * Sets up the components
      */
-    @Override
-    protected void onStart() {
-        super.onStart();
-
-        setUp();
-    }
-
-    /**
-     * Sets up the activity
-     */
-    private void setUp() {
+    protected void setComponents() {
 
         Globals.marvelApiConfig = new MarvelApiConfig.Builder(Globals.publicKey, Globals.privateKey).debug().build();
 
@@ -88,6 +78,13 @@ public class SearchActivity extends BaseActivity {
         searchText = (EditText) findViewById(R.id.search_edit_text);
         searchText.setTypeface(defaultFont);
         searchButton = (ImageView) findViewById(R.id.search_button);
+    }
+
+    /**
+     * Sets the components' events
+     */
+    protected void setEvents() {
+
         searchButton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
@@ -105,8 +102,9 @@ public class SearchActivity extends BaseActivity {
                 final CharactersQuery spider = CharactersQuery.Builder.create().withNameStartWith(searchText.getText().toString()).build();
 
                 // Executa a pesquisa pelos personagens de forma assíncrona
-                new AsyncTask<Void, Void, Void>() {
-                    protected Void doInBackground(Void... voids) {
+                new AsyncTask() {
+
+                    protected Void doInBackground(Object[] params) {
 
                         try {
 
