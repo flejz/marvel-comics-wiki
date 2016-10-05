@@ -3,6 +3,15 @@
 
     <item
         is-multidex="true"
+        jar="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_ed648b584704b3ba17039a21ccf8fbd1f4e3e4ab/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -27,96 +36,6 @@
         revision="24.0.2"
         sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
         <dex dex="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_077754b7a6380b2c94a2ef34dd6cc3f487ac780a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jlopes/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.6.0/212387a39088ecd3daff8e3bfc3bdc4123e33c67/okhttp-2.6.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="212387a39088ecd3daff8e3bfc3bdc4123e33c67">
-        <dex dex="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-2.6.0_88e375e60f82ed2b14ae0fbdcd617f92ab411302/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jlopes/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_d8c38a9dfd1195e742120ccdc37af1820b1931d7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
-        <dex dex="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.1_cb4b186b09eec0c43276763176a4383a8581e6e4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jlopes/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/logging-interceptor/2.6.0/77dc6e1eedd47953b41ef936f20b9b693fe73f6f/logging-interceptor-2.6.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="77dc6e1eedd47953b41ef936f20b9b693fe73f6f">
-        <dex dex="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/transforms/dex/debug/folders/1000/10/logging-interceptor-2.6.0_952f854a4ad8fcfdd0ab068b08e960bd6ef476f5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_35f6bc460b005f8e4e7091f47fac5f907817dc77/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jlopes/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
-        <dex dex="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.3.1_c027e18f3e864e771e3e61d18de02aa3bf785c7f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_bf7532d7254bd2f891e8d376355875842617a0de/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_b95c089f8124b59ff37d3b642400c22b2f0f44e2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_c4318ee0d8ad8270df7f7b8270d09e905ffaa62f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_ed648b584704b3ba17039a21ccf8fbd1f4e3e4ab/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -174,12 +93,75 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/jlopes/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.6.0/212387a39088ecd3daff8e3bfc3bdc4123e33c67/okhttp-2.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="212387a39088ecd3daff8e3bfc3bdc4123e33c67">
+        <dex dex="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-2.6.0_88e375e60f82ed2b14ae0fbdcd617f92ab411302/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jlopes/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_d8c38a9dfd1195e742120ccdc37af1820b1931d7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
         <dex dex="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_67bd6771439a32bb365de4c0df005361841e29b3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.1_cb4b186b09eec0c43276763176a4383a8581e6e4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jlopes/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/logging-interceptor/2.6.0/77dc6e1eedd47953b41ef936f20b9b693fe73f6f/logging-interceptor-2.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="77dc6e1eedd47953b41ef936f20b9b693fe73f6f">
+        <dex dex="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/transforms/dex/debug/folders/1000/10/logging-interceptor-2.6.0_952f854a4ad8fcfdd0ab068b08e960bd6ef476f5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_35f6bc460b005f8e4e7091f47fac5f907817dc77/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jlopes/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.3.1_c027e18f3e864e771e3e61d18de02aa3bf785c7f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_bf7532d7254bd2f891e8d376355875842617a0de/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -210,11 +192,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_b95c089f8124b59ff37d3b642400c22b2f0f44e2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="b19212366e37a5705d16f7489279db86946b82d7">
+        sha1="3d4f0f598860c6c3993d242e911bbf02d318c124">
         <dex dex="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_db70bd61c9a78396f4f19af33b95e6932676773a/classes.dex" />
     </item>
     <item
@@ -225,6 +216,15 @@
         revision="24.0.2"
         sha1="98476622f10715998eacf9240d6b479f12c66143">
         <dex dex="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.6.0_f35080b79a00775a4589fb384687a316e1bc7e05/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/home/jlopes/git/marvel-comics-wiki/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_c4318ee0d8ad8270df7f7b8270d09e905ffaa62f/classes.dex" />
     </item>
 
 </items>

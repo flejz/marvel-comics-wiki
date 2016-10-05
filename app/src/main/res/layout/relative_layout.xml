@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <Button
+
+        android:id="@+id/rotulo1"
+        android:layout_alignParentRight="true"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Rótulo 1" />
+
+    <Button
+
+        android:id="@+id/rotulo2"
+        android:layout_toLeftOf="@id/rotulo1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Rótulo 2" />
+
+    <Button
+
+        android:id="@+id/rotulo3"
+        android:layout_toLeftOf="@id/rotulo1"
+        android:layout_below="@id/rotulo2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Rótulo 3" />
+
+    <Button
+
+        android:id="@+id/rotulo4"
+        android:layout_toLeftOf="@id/rotulo3"
+        android:layout_below="@id/rotulo2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Rótulo 4" />
+
+    <Button
+
+        android:id="@+id/rotulo5"
+        android:layout_toLeftOf="@id/rotulo3"
+        android:layout_below="@id/rotulo4"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Rótulo 5" />
+
+    <Button
+
+        android:id="@+id/rotulo6"
+        android:layout_toLeftOf="@id/rotulo3"
+        android:layout_below="@id/rotulo5"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Rótulo 6" />
+
+
+    <Button
+
+        android:id="@+id/rotulo7"
+        android:layout_toRightOf="@id/rotulo6"
+        android:layout_below="@id/rotulo5"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Rótulo 7" />
+
+    <Button
+
+        android:id="@+id/rotulo8"
+        android:layout_toRightOf="@id/rotulo6"
+        android:layout_below="@id/rotulo7"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Rótulo 8" />
+
+    <Button
+
+        android:id="@+id/rotulo9"
+        android:layout_below="@id/rotulo7"
+        android:layout_alignParentRight="true"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Rótulo 9" />
+
+
+</RelativeLayout>
