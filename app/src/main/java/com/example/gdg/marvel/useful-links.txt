@@ -1,2 +1,0 @@
-http://developer.marvel.com/documentation/authorization
-http://developer.marvel.com/documentation/images
