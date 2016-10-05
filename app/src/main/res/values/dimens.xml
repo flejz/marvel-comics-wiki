@@ -4,7 +4,6 @@
 
     <dimen name="card_comics_width">130dp</dimen>
 
-
     <dimen name="default_border_width">2dp</dimen>
     <dimen name="default_border_radius">2dp</dimen>
     <dimen name="default_edit_text_text_size">20dp</dimen>

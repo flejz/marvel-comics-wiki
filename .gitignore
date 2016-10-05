@@ -1,2 +1,5 @@
 ,/app/build/outputs/apk/app-debug.apk app/build/outputs/apk/app-debug.apk
 .idea
+.gradle
+.gradle/*
+.gradle/**

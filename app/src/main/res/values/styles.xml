@@ -4,32 +4,6 @@
         <item name="colorPrimary">@color/red</item>
         <item name="colorPrimaryDark">@color/black</item>
         <item name="colorAccent">@color/gray</item>
-        <item name="android:textColorPrimary">@color/black</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowBackground">@drawable/background_comic_page</item>
-
-        <item name="android:textViewStyle">@style/MarvelTheme.TextView</item>
-        <item name="android:editTextStyle">@style/MarvelTheme.EditText</item>
-        <item name="android:buttonStyle">@style/MarvelTheme.Button</item>
-    </style>
-
-    <style name="MarvelTheme.EditText">
-        <item name="android:singleLine">true</item>
-        <item name="android:background">@drawable/default_edit_text</item>
-        <item name="android:textColor">@color/black</item>
-        <item name="android:textSize">@dimen/default_edit_text_text_size</item>
-    </style>
-
-    <style name="MarvelTheme.Button">
-        <item name="android:layout_marginTop">@dimen/vertical_margin</item>
-        <item name="android:background">@drawable/default_button</item>
-        <item name="android:textColor">@color/black</item>
-        <item name="android:textSize">@dimen/default_edit_text_text_size</item>
-    </style>
-
-    <style name="MarvelTheme.TextView">
-        <item name="android:background">@drawable/default_box_padding</item>
-        <item name="android:textColor">@color/black</item>
     </style>
 
 </resources>
