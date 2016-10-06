@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+        <Button
+            android:layout_x="0px"
+            android:layout_y="0px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Rótulo 1" />
+
+        <TextView
+            android:layout_x="100px"
+            android:layout_y="100px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Rótulo 2" />
+
+        <Button
+            android:layout_x="200px"
+            android:layout_y="200px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Rótulo 3" />
+
+        <TextView
+            android:layout_x="300px"
+            android:layout_y="300px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Rótulo 4" />
+
+        <Button
+            android:layout_x="400px"
+            android:layout_y="400px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Rótulo 5" />
+
+</AbsoluteLayout>
