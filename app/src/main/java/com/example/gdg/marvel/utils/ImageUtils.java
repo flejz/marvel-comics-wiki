@@ -8,10 +8,6 @@ import android.os.Environment;
 import android.util.Log;
 
 import com.example.gdg.marvel.R;
-import com.karumi.marvelapiclient.model.CharacterDto;
-import com.karumi.marvelapiclient.model.ComicDto;
-import com.karumi.marvelapiclient.model.EventResourceDto;
-import com.karumi.marvelapiclient.model.MarvelImage;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -94,6 +90,7 @@ public class ImageUtils {
      * @param character
      * @return
      */
+    /*
     public static Bitmap getFromCharacter(CharacterDto character) {
 
         // Monta o nome do arquivo
@@ -105,6 +102,7 @@ public class ImageUtils {
                 character.getThumbnail().getImageUrl(MarvelImage.Size.LANDSCAPE_AMAZING),
                 "characters");
     }
+    */
 
     /**
      * Gets from char
@@ -112,6 +110,7 @@ public class ImageUtils {
      * @param comic
      * @return
      */
+    /*
     public static Bitmap getFromComic(ComicDto comic) {
 
         // Monta o nome do arquivo
@@ -123,7 +122,7 @@ public class ImageUtils {
                 comic.getThumbnail().getImageUrl(MarvelImage.Size.PORTRAIT_UNCANNY),
                 "comics");
     }
-
+    */
 
     /**
      * Gets the imagem from the url
