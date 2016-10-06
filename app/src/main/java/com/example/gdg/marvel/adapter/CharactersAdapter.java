@@ -83,16 +83,6 @@ public class CharactersAdapter extends RecyclerView.Adapter<CharactersAdapter.Ch
             nameLabel.setTypeface(defaultFont);
             loading = (ProgressBar) card.findViewById(R.id.loading);
             thumbnail = (ImageView) card.findViewById(R.id.thumbnail);
-
-            /*
-            thumbnail.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                    if (events != null) {
-                        events.onSelect(character);
-                    }
-                }
-            });
-            */
         }
 
         // Bids the char
