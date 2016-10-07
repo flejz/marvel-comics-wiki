@@ -28,7 +28,7 @@ public class CharactersAdapter extends RecyclerView.Adapter<CharactersAdapter.Ch
     // Vars
     Context context;
     List<CharacterDto> characters;
-    CharactersEvents events;
+    //CharactersEvents events;
 
     // Seta a fonte padrão
     Typeface defaultFont;
@@ -38,12 +38,12 @@ public class CharactersAdapter extends RecyclerView.Adapter<CharactersAdapter.Ch
      *
      * @param characters
      */
-    public CharactersAdapter(Context context, List<CharacterDto> characters, CharactersEvents events) {
+    public CharactersAdapter(Context context, List<CharacterDto> characters) {
 
         // Inicializando a classe
         this.context = context;
         this.characters = characters;
-        this.events = events;
+        //this.events = events;
 
         this.defaultFont = Typeface.createFromAsset(context.getAssets(), Globals.defaultFontName);
     }
@@ -83,6 +83,8 @@ public class CharactersAdapter extends RecyclerView.Adapter<CharactersAdapter.Ch
             nameLabel.setTypeface(defaultFont);
             loading = (ProgressBar) card.findViewById(R.id.loading);
             thumbnail = (ImageView) card.findViewById(R.id.thumbnail);
+
+            /*
             thumbnail.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     if (events != null) {
@@ -90,6 +92,7 @@ public class CharactersAdapter extends RecyclerView.Adapter<CharactersAdapter.Ch
                     }
                 }
             });
+            */
         }
 
         // Bids the char

@@ -37,11 +37,12 @@ public class SearchActivity extends BaseActivity {
     RecyclerView charactersList;
 
     // Listeners
+    /*
     CharactersEvents characterEvents = new CharactersEvents() {
 
         public void onSelect(CharacterDto character) {
 
-            Cache.currentCharacter = character;
+            //Cache.currentCharacter = character;
 
             // Cria a intenção de abrir a tela do personagem
             Intent characterIntention = new Intent(SearchActivity.this, CharacterActivity.class);
@@ -50,6 +51,7 @@ public class SearchActivity extends BaseActivity {
             startActivity(characterIntention);
         }
     };
+    */
 
     /**
      * Constructor
@@ -126,7 +128,7 @@ public class SearchActivity extends BaseActivity {
                                     }
 
                                     // Cria o adaptador
-                                    CharactersAdapter adapter = new CharactersAdapter(SearchActivity.this, all.getResponse().getCharacters(), characterEvents);
+                                    CharactersAdapter adapter = new CharactersAdapter(SearchActivity.this, all.getResponse().getCharacters());
 
                                     // Insere o adaptador
                                     charactersList.setAdapter(adapter);
